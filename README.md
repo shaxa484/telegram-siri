@@ -154,8 +154,6 @@ This project uses a **profile-based calling method** to avoid Siri overlay issue
 
 ## Siri Integration with Shortcuts
 
-### Option 1: Create Shortcuts Manually
-
 #### Shortcut 1: Send Telegram Message
 
 1. Open **Shortcuts** app
@@ -183,14 +181,6 @@ This project uses a **profile-based calling method** to avoid Siri overlay issue
    /Users/YOUR_USERNAME/telegram-siri/telegram_call.sh "call $1"
    ```
 4. Name it "Telegram Call"
-
-
-### Option 2: Import Shortcuts (if shared)
-
-If someone shares `.shortcut` files:
-1. Double-click the `.shortcut` file
-2. Click "Add Shortcut"
-3. Edit the file paths to match your username
 
 ### Grant Permissions
 
