@@ -21,11 +21,15 @@ Control Telegram with Siri on macOS! Send messages and make voice calls using vo
 
 ### 1. Clone the Repository
 
+**Important:** Clone to your home directory to avoid macOS permission issues with nested folders.
+
 ```bash
-cd ~/Documents/Github
-git clone https://github.com/YOUR_USERNAME/telegram-siri.git
+cd ~
+git clone https://github.com/shaxa484/telegram-siri.git
 cd telegram-siri
 ```
+
+**Why home directory?** macOS applies stricter permissions to folders like `Documents/` which can cause "operation not permitted" errors with Shortcuts and automation.
 
 ### 2. Install Homebrew (if not already installed)
 
@@ -158,7 +162,7 @@ This creates a `telegram_session.session` file that remembers your login.
    - Pass Input: `as arguments`
    - Script:
    ```bash
-   /Users/YOUR_USERNAME/Documents/Github/telegram-siri/telegram_sender.sh "$1"
+   /Users/YOUR_USERNAME/telegram-siri/telegram_sender.sh "$1"
    ```
 5. Name it "Send Telegram"
 6. Click ⓘ → Add to Siri: "Send telegram message"
@@ -172,7 +176,7 @@ This creates a `telegram_session.session` file that remembers your login.
    - Pass Input: `as arguments`
    - Script:
    ```bash
-   /Users/YOUR_USERNAME/Documents/Github/telegram-siri/telegram_call.sh "call $1"
+   /Users/YOUR_USERNAME/telegram-siri/telegram_call.sh "call $1"
    ```
 4. Name it "Telegram Call"
 5. Click ⓘ → Add to Siri: "Telegram call"
@@ -202,7 +206,8 @@ Once shortcuts are set up:
 
 ### "Operation not permitted" error
 - Grant Accessibility permissions to Terminal/Python in System Settings
-- Move the folder to your home directory if in a restricted location
+- **If you cloned to `Documents/` or other nested folders**: Move the entire `telegram-siri` folder to your home directory (`~/telegram-siri`) to avoid macOS permission restrictions
+- Update the paths in your Shortcuts after moving
 
 ### Calls not working
 - Make sure Telegram is in **filled windowed mode** (not fullscreen!)
@@ -211,7 +216,7 @@ Once shortcuts are set up:
 
 ### "Module not found: telethon"
 ```bash
-cd ~/Documents/Github/telegram-siri
+cd ~/telegram-siri
 source venv/bin/activate
 pip install telethon
 ```
@@ -241,6 +246,7 @@ telegram-siri/
 ## Important Notes
 
 - **Privacy**: Never commit `telegram_session.session` or files with API credentials to GitHub
+- **Installation Location**: Always install to home directory (`~/telegram-siri`) to avoid macOS permission issues with nested folders like `Documents/`
 - **Window Position**: Keep Telegram window consistent for calls to work
 - **Telegram Mode**: Must use filled window mode, NOT fullscreen
 - **Session File**: The `.session` file keeps you logged in - don't delete it

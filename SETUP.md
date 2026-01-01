@@ -9,8 +9,12 @@
 # Install cliclick
 brew install cliclick
 
+# Clone to home directory (avoids permission issues)
+cd ~
+git clone https://github.com/shaxa484/telegram-siri.git
+
 # Set up Python environment
-cd ~/Documents/Github/telegram-siri
+cd ~/telegram-siri
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -95,7 +99,7 @@ python3 send_telegram.py john "test"
 2. Add **Text** → `Shortcut Input`
 3. Add **Run Shell Script**:
    ```bash
-   /Users/YOUR_USERNAME/Documents/Github/telegram-siri/telegram_sender.sh "$1"
+   /Users/YOUR_USERNAME/telegram-siri/telegram_sender.sh "$1"
    ```
 4. Add to Siri: "Send telegram message"
 
@@ -105,7 +109,7 @@ python3 send_telegram.py john "test"
 2. Add **Text** → `Shortcut Input`
 3. Add **Run Shell Script**:
    ```bash
-   /Users/YOUR_USERNAME/Documents/Github/telegram-siri/telegram_call.sh "call $1"
+   /Users/YOUR_USERNAME/telegram-siri/telegram_call.sh "call $1"
    ```
 4. Add to Siri: "Telegram call"
 

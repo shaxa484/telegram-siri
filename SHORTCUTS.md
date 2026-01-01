@@ -31,7 +31,7 @@
   - Pass Input: `as arguments`
   - Script:
   ```bash
-  /Users/YOUR_USERNAME/Documents/Github/telegram-siri/telegram_sender.sh "$1"
+  /Users/YOUR_USERNAME/telegram-siri/telegram_sender.sh "$1"
   ```
 - Siri Phrase: `Send telegram message`
 
@@ -45,7 +45,7 @@
   - Pass Input: `as arguments`
   - Script:
   ```bash
-  /Users/YOUR_USERNAME/Documents/Github/telegram-siri/telegram_call.sh "call $1"
+  /Users/YOUR_USERNAME/telegram-siri/telegram_call.sh "call $1"
   ```
 - Siri Phrase: `Telegram call`
 
@@ -57,8 +57,8 @@
 2. Click on the "Run Shell Script" action
 3. Replace `YOUR_USERNAME` with your actual macOS username
 4. Example:
-   - Before: `/Users/YOUR_USERNAME/Documents/Github/telegram-siri/...`
-   - After: `/Users/john/Documents/Github/telegram-siri/...`
+   - Before: `/Users/YOUR_USERNAME/telegram-siri/...`
+   - After: `/Users/john/telegram-siri/...`
 
 ## Alternative: Create Shortcuts from Scratch
 
@@ -72,7 +72,7 @@ If import doesn't work, follow the manual steps in README.md. It only takes 2 mi
 3. Grant permissions when prompted
 
 **"File not found" error?**
-1. Check that you cloned the repo to `~/Documents/Github/telegram-siri`
+1. Check that you cloned the repo to `~/telegram-siri`
 2. If you used a different location, update the paths in shortcuts
 
 **Permission denied?**
