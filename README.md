@@ -132,7 +132,7 @@ This project uses a **profile-based calling method** to avoid Siri overlay issue
 ./find_coordinates.sh
 ```
 
-5. **Step 1**: Hover over the **contact name/photo in the header** → Press Enter
+5. **Step 1**: Hover over the **contact name in the header** → Press Enter
 6. **Step 2**: Click the header to open the profile, then hover over the **call button in the profile** → Press Enter
 7. Coordinates will be saved
 
@@ -169,7 +169,7 @@ This project uses a **profile-based calling method** to avoid Siri overlay issue
    /Users/YOUR_USERNAME/telegram-siri/telegram_sender.sh "$1"
    ```
 5. Name it "Send Telegram"
-6. Click ⓘ → Add to Siri: "Send telegram message"
+
 
 #### Shortcut 2: Telegram Call
 
@@ -183,7 +183,7 @@ This project uses a **profile-based calling method** to avoid Siri overlay issue
    /Users/YOUR_USERNAME/telegram-siri/telegram_call.sh "call $1"
    ```
 4. Name it "Telegram Call"
-5. Click ⓘ → Add to Siri: "Telegram call"
+
 
 ### Option 2: Import Shortcuts (if shared)
 
@@ -288,7 +288,7 @@ If you encounter issues:
 2. Make sure all prerequisites are installed
 3. Verify Telegram API credentials are correct
 4. Open an issue on GitHub with error details
-
+5. Contact me on Telegram: t.me/sh89769
 ---
 
 **Enjoy controlling Telegram with your voice! 🎉**
