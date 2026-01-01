@@ -78,7 +78,7 @@ python3 send_telegram.py john "test"
 ```bash
 # Open Telegram in windowed mode (NOT fullscreen!)
 ./find_coordinates.sh
-# Step 1: Hover over contact NAME/PHOTO in header → Press Enter
+# Step 1: Hover over contact NAME in header → Press Enter
 # Step 2: Click header to open profile, hover over CALL button → Press Enter
 ```
 
@@ -104,7 +104,7 @@ python3 send_telegram.py john "test"
    ```bash
    /Users/YOUR_USERNAME/telegram-siri/telegram_sender.sh "$1"
    ```
-4. Add to Siri: "Send telegram message"
+4. Add to Siri: "Send telegram"
 
 ### Shortcut 2: "Telegram Call"
 
@@ -118,8 +118,8 @@ python3 send_telegram.py john "test"
 
 ## 8. Use with Siri!
 
-- "Hey Siri, send telegram message john what's up"
-- "Hey Siri, telegram call john"
+- "Hey Siri, send telegram, john what's up"
+- "Hey Siri, telegram call, john"
 
 ## Troubleshooting
 
