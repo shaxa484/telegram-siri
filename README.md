@@ -4,8 +4,8 @@ Control Telegram with Siri on macOS! Send messages and make voice calls using vo
 
 ## Features
 
-- 📨 **Send Messages**: "Hey Siri, send telegram message John hello there"
-- 📞 **Voice Calls**: "Hey Siri, telegram call John"
+- 📨 **Send Messages**: "Hey Siri, send telegram message, John hello there"
+- 📞 **Voice Calls**: "Hey Siri, telegram call, John"
 - 🚀 **Fully Automated**: No manual clicking needed for calls
 - 🎯 **Contact Shortcuts**: Easy contact name mapping
 
@@ -72,7 +72,7 @@ Edit both `send_telegram.py` and `telegram_call.sh` to add your contacts:
 **In `send_telegram.py`:**
 ```python
 CONTACTS = {
-    'john': 'john_telegram_username',
+    'john': 'john_telegram_username', # No need to add '@' symbol before usernames
     'mom': '+1234567890',  # Can use phone numbers too
     'friend': 'friend_username',
 }
@@ -195,8 +195,8 @@ When you first run shortcuts via Siri, you may need to grant permissions:
 
 Once shortcuts are set up:
 
-- **Send message**: "Hey Siri, send telegram message john what's up"
-- **Voice call**: "Hey Siri, telegram call john"
+- **Send message**: "Hey Siri, send telegram message, john what's up"
+- **Voice call**: "Hey Siri, telegram call, john"
 
 ## Troubleshooting
 
@@ -205,7 +205,7 @@ Once shortcuts are set up:
 - Move the folder to your home directory if in a restricted location
 
 ### Calls not working
-- Make sure Telegram is in **windowed mode** (not fullscreen!)
+- Make sure Telegram is in **filled windowed mode** (not fullscreen!)
 - Recalibrate by running `./find_coordinates.sh`
 - Keep Telegram window at the same position and size
 
@@ -221,7 +221,7 @@ pip install telethon
 - Run `python3 send_telegram.py john "test"` to log in again
 
 ### Wrong contact
-- Check that contact names in `CONTACTS` dictionary match Telegram usernames exactly
+- Check that contact names in `CONTACTS` dictionary match Telegram usernames exactly no need to add '@' to username
 - Use international phone format: `+1234567890`
 
 ## File Structure
@@ -242,24 +242,13 @@ telegram-siri/
 
 - **Privacy**: Never commit `telegram_session.session` or files with API credentials to GitHub
 - **Window Position**: Keep Telegram window consistent for calls to work
-- **Telegram Mode**: Must use windowed mode, NOT fullscreen
+- **Telegram Mode**: Must use filled window mode, NOT fullscreen
 - **Session File**: The `.session` file keeps you logged in - don't delete it
 
 ## Security
 
 - Keep your `api_id` and `api_hash` private
 - Don't share your `telegram_session.session` file
-- Use a `.gitignore` file to exclude sensitive files:
-
-```gitignore
-telegram_session.session
-telegram_session.session-journal
-coordinates.txt
-*.pyc
-__pycache__/
-venv/
-.DS_Store
-```
 
 ## Contributing
 
