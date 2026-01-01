@@ -73,13 +73,16 @@ python3 send_telegram.py john "test"
 # Enter the code sent to your Telegram app
 ```
 
-## 5. Calibrate Call Button (1 minute)
+## 5. Calibrate Call Button (2 minutes)
 
 ```bash
 # Open Telegram in windowed mode (NOT fullscreen!)
 ./find_coordinates.sh
-# Hover over phone icon and press Enter
+# Step 1: Hover over contact NAME/PHOTO in header → Press Enter
+# Step 2: Click header to open profile, hover over CALL button → Press Enter
 ```
+
+**Why two steps?** This avoids Siri overlay blocking the call button. The script opens the profile first, where the call button won't be covered.
 
 ## 6. Test Commands
 
@@ -125,7 +128,9 @@ python3 send_telegram.py john "test"
 
 **Calls not working?**
 → Make sure Telegram is windowed (not fullscreen)
-→ Re-run `./find_coordinates.sh`
+→ Re-run `./find_coordinates.sh` (both steps: header + profile call button)
+→ Grant Accessibility permissions to Terminal and Shortcuts
+→ Keep Telegram window at same position/size
 
 **Module not found?**
 → `source venv/bin/activate && pip install telethon`

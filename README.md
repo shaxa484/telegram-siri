@@ -8,6 +8,7 @@ Control Telegram with Siri on macOS! Send messages and make voice calls using vo
 - 📞 **Voice Calls**: "Hey Siri, telegram call, John"
 - 🚀 **Fully Automated**: No manual clicking needed for calls
 - 🎯 **Contact Shortcuts**: Easy contact name mapping
+- 🛡️ **Siri Overlay Solution**: Uses profile-based calling to avoid UI blocking when Siri is active
 
 ## Prerequisites
 
@@ -120,6 +121,8 @@ This creates a `telegram_session.session` file that remembers your login.
 
 **IMPORTANT**: Telegram must be in **windowed mode**, NOT fullscreen!
 
+This project uses a **profile-based calling method** to avoid Siri overlay issues. When Siri activates, it can overlap UI elements in the chat header. By opening the contact's profile first, the call button appears in a different position that won't be blocked.
+
 1. Open Telegram Desktop
 2. Resize it to your preferred window size
 3. Open any chat
@@ -129,8 +132,9 @@ This creates a `telegram_session.session` file that remembers your login.
 ./find_coordinates.sh
 ```
 
-5. When prompted, hover your mouse over the **phone icon** (call button) in the chat header
-6. Press Enter - the coordinates will be saved
+5. **Step 1**: Hover over the **contact name/photo in the header** → Press Enter
+6. **Step 2**: Click the header to open the profile, then hover over the **call button in the profile** → Press Enter
+7. Coordinates will be saved
 
 **Note**: If you resize/move Telegram window, you'll need to recalibrate!
 
@@ -192,8 +196,15 @@ If someone shares `.shortcut` files:
 
 When you first run shortcuts via Siri, you may need to grant permissions:
 
-1. **Accessibility**: System Settings → Privacy & Security → Accessibility → Enable Terminal/Python
-2. **Files and Folders**: Allow Shortcuts to access your Documents folder
+1. **Accessibility**: System Settings → Privacy & Security → Accessibility
+   - Add and enable: **Terminal** (or your terminal app)
+   - Add and enable: **Shortcuts**
+   - You may be prompted when first running - click **Allow**
+
+2. **Automation**: System Settings → Privacy & Security → Automation
+   - Allow **Shortcuts** to control **Telegram** and **System Events** if prompted
+
+3. **Files and Folders**: Allow Shortcuts to access your home folder when prompted
 
 ## Siri Commands
 
@@ -211,8 +222,10 @@ Once shortcuts are set up:
 
 ### Calls not working
 - Make sure Telegram is in **filled windowed mode** (not fullscreen!)
-- Recalibrate by running `./find_coordinates.sh`
+- Recalibrate by running `./find_coordinates.sh` - follow BOTH steps (header + profile call button)
 - Keep Telegram window at the same position and size
+- **Siri overlay issue**: The script now uses a profile-based method to avoid Siri blocking the call button. If you calibrated using the old method, recalibrate with the new two-step process
+- Grant Accessibility permissions to Terminal and Shortcuts (see permissions section above)
 
 ### "Module not found: telethon"
 ```bash
