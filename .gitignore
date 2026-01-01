@@ -1,0 +1,36 @@
+# Telegram session files (contain login credentials)
+telegram_session.session
+telegram_session.session-journal
+
+# Coordinates file (user-specific)
+coordinates.txt
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+ENV/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Personal config (if you create one)
+config.py
+.env
