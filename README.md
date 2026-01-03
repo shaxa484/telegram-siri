@@ -10,6 +10,48 @@ Control Telegram with Siri on macOS! Send messages and make voice calls using vo
 - 🎯 **Contact Shortcuts**: Easy contact name mapping
 - 🛡️ **Siri Overlay Solution**: Uses profile-based calling to avoid UI blocking when Siri is active
 
+## 🚀 Quick Start - Choose Your Path
+
+### Option 1: 🎨 Visual Setup Wizard (Recommended for Beginners)
+
+**Don't want to read a wall of text?** Use our beautiful interactive setup app!
+
+<div align="center">
+<img src="https://img.shields.io/badge/Setup-Visual%20Guide-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Difficulty-Easy-green?style=for-the-badge" />
+</div>
+
+Features:
+- ✨ **Beautiful modern UI** with smooth animations
+- 📋 **One-click copy buttons** for every command
+- ✅ **Built-in validation** - checks if each step worked
+- 💾 **Progress tracking** - saves your progress automatically
+- 🎯 **Step-by-step guidance** - no confusion
+
+**To run the setup wizard:**
+```bash
+cd setup-wizard
+npm install
+npm run electron:dev
+```
+
+**Or download/build a DMG installer:**
+```bash
+cd setup-wizard
+npm install
+npm run dist:mac
+# DMG will be in setup-wizard/release/
+# Share this file with friends!
+```
+
+See [setup-wizard/README.md](setup-wizard/README.md) for more details.
+
+---
+
+### Option 2: 📖 Manual Installation (For Advanced Users)
+
+**Prefer the command line?** Continue reading below for step-by-step terminal instructions.
+
 ## Prerequisites
 
 - **macOS** (Tested on macOS Ventura and later)
