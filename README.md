@@ -12,45 +12,34 @@ Control Telegram with Siri on macOS! Send messages and make voice calls using vo
 
 ## 🚀 Quick Start - Choose Your Path
 
-### Option 1: 🎨 Visual Setup Wizard (Recommended for Beginners)
+### Option 1: 🎨 Visual Setup Wizard (Recommended)
 
-**Don't want to read a wall of text?** Use our beautiful interactive setup app!
+**Don't want to read a wall of text?** Download our beautiful setup app!
 
 <div align="center">
 <img src="https://img.shields.io/badge/Setup-Visual%20Guide-blue?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Difficulty-Easy-green?style=for-the-badge" />
 </div>
 
-Features:
-- ✨ **Beautiful modern UI** with smooth animations
-- 📋 **One-click copy buttons** for every command
-- ✅ **Built-in validation** - checks if each step worked
-- 💾 **Progress tracking** - saves your progress automatically
-- 🎯 **Step-by-step guidance** - no confusion
+**How to use:**
+1. **[Download the DMG](https://github.com/shaxa484/telegram-siri/releases)** from GitHub Releases
+2. **Open** the DMG file
+3. **Drag** to Applications folder
+4. **Right-click** → Open (first time only)
+5. **Follow** the beautiful step-by-step wizard!
 
-**To run the setup wizard:**
-```bash
-cd setup-wizard
-npm install
-npm run electron:dev
-```
-
-**Or download/build a DMG installer:**
-```bash
-cd setup-wizard
-npm install
-npm run dist:mac
-# DMG will be in setup-wizard/release/
-# Share this file with friends!
-```
-
-See [setup-wizard/README.md](setup-wizard/README.md) for more details.
+The app includes:
+- ✨ Beautiful modern UI with smooth animations
+- 📋 One-click copy buttons for every command
+- ✅ Built-in validation checks
+- 💾 Auto-saves your progress
+- 🎯 Clear step-by-step guidance
 
 ---
 
 ### Option 2: 📖 Manual Installation (For Advanced Users)
 
-**Prefer the command line?** Continue reading below for step-by-step terminal instructions.
+**Prefer the command line?** Continue reading below for terminal instructions.
 
 ## Prerequisites
 
