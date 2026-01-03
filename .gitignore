@@ -34,3 +34,4 @@ ENV/
 # Personal config (if you create one)
 config.py
 .env
+
