@@ -14,7 +14,7 @@ Control Telegram with Siri on macOS! Send messages and make voice calls using vo
 
 ### Option 1: 🎨 Visual Setup Wizard (Recommended)
 
-**Don't want to read a wall of text?** Download our beautiful setup app!
+**Don't want to read a wall of text?** Download my beautiful setup app!
 
 <div align="center">
 <img src="https://img.shields.io/badge/Setup-Visual%20Guide-blue?style=for-the-badge" />
