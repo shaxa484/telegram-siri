@@ -4,7 +4,7 @@ Control Telegram with Siri on macOS! Send messages and make voice calls using vo
 
 ## Features
 
-- 📨 **Send Messages**: "Hey Siri, send telegram message, John hello there"
+- 📨 **Send Messages**: "Hey Siri, send telegram, John hello there"
 - 📞 **Voice Calls**: "Hey Siri, telegram call, John"
 - 🚀 **Fully Automated**: No manual clicking needed for calls
 - 🎯 **Contact Shortcuts**: Easy contact name mapping
