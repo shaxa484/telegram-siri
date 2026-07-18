@@ -2,6 +2,10 @@
 
 Control Telegram with Siri on macOS! Send messages and make voice calls using voice commands.
 
+## Why I built this
+
+I wanted to seamlessly send Telegram messages hands-free on my Mac, but the native app lacked support for Siri. So, I built a local automation tool that bridges Siri's voice recognition directly with the Telegram API.
+
 ## Features
 
 - 📨 **Send Messages**: "Hey Siri, send telegram, John hello there"
